@@ -1,0 +1,16 @@
+{
+  "name": "ads.wp.dev",
+  "version": "1.0.0",
+  "description": "WordPress Theme for ads.iclabs.icrossing.net",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "iCrossing (Jim Frenette)",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-sass": "^2.3.1"
+  }
+}

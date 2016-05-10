@@ -1,0 +1,204 @@
+/**
+ * 11.4 - Comments
+ */
+
+.comments-area {
+  margin: 0 7.6923% 3.5em;
+}
+
+.comment-list + .comment-respond, .comment-navigation + .comment-respond {
+  padding-top: 1.75em;
+}
+
+.comments-title, .comment-reply-title {
+  border-top: 4px solid $black;
+  font-family: $font-family-input;
+  font-size: 23px;
+  font-size: 1.4375rem;
+  font-weight: 700;
+  line-height: 1.3125;
+  padding-top: 1.217391304em;
+}
+
+.comments-title {
+  margin-bottom: 1.217391304em;
+}
+
+.comment-list {
+  list-style: none;
+  margin: 0;
+  article, .pingback, .trackback {
+    border-top: 1px solid $gray1;
+    padding: 1.75em 0;
+  }
+  .children {
+    list-style: none;
+    margin: 0;
+    > li {
+      padding-left: 0.875em;
+    }
+  }
+}
+
+.comment-author {
+  color: $black;
+  margin-bottom: 0.4375em;
+  .avatar {
+    float: left;
+    height: 28px;
+    margin-right: 0.875em;
+    position: relative;
+    width: 28px;
+  }
+}
+
+.bypostauthor > article .fn:after {
+  content: "\f304";
+  left: 3px;
+  position: relative;
+  top: 5px;
+}
+
+.comment-metadata, .pingback .edit-link {
+  color: $gray2;
+  font-family: $font-family-input;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.6153846154;
+}
+
+.comment-metadata {
+  margin-bottom: 2.1538461538em;
+  a {
+    color: $gray2;
+  }
+}
+
+.pingback .comment-edit-link {
+  color: $gray2;
+}
+
+.comment-metadata a {
+  &:hover, &:focus {
+    color: $blue1;
+  }
+}
+
+.pingback .comment-edit-link {
+  &:hover, &:focus {
+    color: $blue1;
+  }
+}
+
+.comment-metadata .edit-link, .pingback .edit-link {
+  display: inline-block;
+}
+
+.comment-metadata .edit-link:before, .pingback .edit-link:before {
+  content: "\002f";
+  display: inline-block;
+  opacity: 0.7;
+  padding: 0 0.538461538em;
+}
+
+.comment-content {
+  ul, ol {
+    margin: 0 0 1.5em 1.25em;
+  }
+  li > {
+    ul, ol {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.comment-reply-link {
+  border: 1px solid $gray1;
+  border-radius: 2px;
+  color: $blue1;
+  display: inline-block;
+  font-family: $font-family-input;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1;
+  margin-top: 2.1538461538em;
+  padding: 0.5384615385em 0.5384615385em 0.4615384615em;
+  &:hover, &:focus {
+    border-color: currentColor;
+    color: $blue1;
+    outline: 0;
+  }
+}
+
+.comment-form {
+  padding-top: 1.75em;
+  label {
+    color: $gray2;
+    display: block;
+    font-family: $font-family-input;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    letter-spacing: 0.076923077em;
+    line-height: 1.6153846154;
+    margin-bottom: 0.5384615385em;
+    text-transform: uppercase;
+  }
+}
+
+.comment-list .comment-form {
+  padding-bottom: 1.75em;
+}
+
+.comment-notes, .comment-awaiting-moderation, .logged-in-as, .form-allowed-tags {
+  color: $gray2;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.6153846154;
+  margin-bottom: 2.1538461538em;
+}
+
+.no-comments {
+  border-top: 1px solid $gray1;
+  font-family: $font-family-input;
+  font-weight: 700;
+  margin: 0;
+  padding-top: 1.75em;
+}
+
+.comment-navigation + .no-comments {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.form-allowed-tags code {
+  font-family: $font-family-mono;
+}
+
+.form-submit {
+  margin-bottom: 0;
+}
+
+.required {
+  color: $blue1;
+  font-family: $font-family-base;
+}
+
+.comment-reply-title small {
+  font-size: 100%;
+  a {
+    border: 0;
+    float: right;
+    height: 32px;
+    overflow: hidden;
+    width: 26px;
+    &:hover, &:focus {
+      color: $black;
+    }
+    &:before {
+      content: "\f405";
+      font-size: 32px;
+      position: relative;
+      top: -5px;
+    }
+  }
+}

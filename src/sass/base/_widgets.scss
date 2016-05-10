@@ -1,0 +1,121 @@
+/**
+ * 10.0 - Widgets
+ */
+
+.widget {
+  border-top: 4px solid $black;
+  margin-bottom: 3.5em;
+  padding-top: 1.75em;
+}
+
+.widget-area > :last-child {
+  margin-bottom: 0;
+}
+
+.widget {
+  > :last-child {
+    margin-bottom: 0;
+  }
+  .widget-title {
+    font-family: $font-family-input;
+    font-size: 16px;
+    font-size: 1rem;
+    letter-spacing: 0.046875em;
+    line-height: 1.3125;
+    margin: 0 0 1.75em;
+    text-transform: uppercase;
+    &:empty {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.widget-title a {
+  color: $black;
+}
+
+/* Calendar widget */
+
+.widget.widget_calendar table {
+  margin: 0;
+}
+
+.widget_calendar {
+  td, th {
+    line-height: 2.5625;
+    padding: 0;
+    text-align: center;
+  }
+  caption {
+    font-weight: 900;
+    margin-bottom: 1.75em;
+  }
+  tbody a {
+    background-color: $blue1;
+    color: $white;
+    display: block;
+    font-weight: 700;
+    &:hover, &:focus {
+      background-color: $gray2;
+      color: $white;
+    }
+  }
+}
+
+/* Recent Posts widget */
+
+.widget_recent_entries {
+  .post-date {
+    color: $gray2;
+    display: block;
+    font-family: $font-family-input;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    line-height: 1.615384615;
+    margin-bottom: 0.538461538em;
+  }
+  li:last-child .post-date {
+    margin-bottom: 0;
+  }
+}
+
+/* RSS widget */
+
+.widget_rss {
+  .rsswidget img {
+    margin-top: -0.375em;
+  }
+  .rss-date, cite {
+    color: $gray2;
+    display: block;
+    font-family: $font-family-input;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    font-style: normal;
+    line-height: 1.615384615;
+    margin-bottom: 0.538461538em;
+  }
+  .rssSummary:last-child {
+    margin-bottom: 2.1538461538em;
+  }
+  li:last-child :last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Tag Cloud widget */
+
+.tagcloud a {
+  border: 1px solid $gray1;
+  border-radius: 2px;
+  display: inline-block;
+  font-family: $font-family-input;
+  line-height: 1;
+  margin: 0 0.1875em 0.4375em 0;
+  padding: 0.5625em 0.4375em 0.5em;
+  &:hover, &:focus {
+    border-color: $blue1;
+    color: $blue1;
+    outline: 0;
+  }
+}

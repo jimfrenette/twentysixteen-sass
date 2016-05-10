@@ -1,0 +1,9 @@
+/**
+ * 14.2 - >= 783px
+ */
+
+@media screen and (min-width: 48.9375em) {
+  body:not(.custom-background-image).admin-bar:before {
+    top: 32px;
+  }
+}

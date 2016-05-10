@@ -1,0 +1,440 @@
+/**
+ * 6.2 - Menus
+ */
+
+.site-header-menu {
+  display: none;
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin: 0.875em 0;
+  &.toggled-on {
+    display: block;
+  }
+}
+
+.no-js .site-header-menu {
+  display: block;
+}
+
+.main-navigation {
+  font-family: $font-family-input;
+}
+
+.site-footer .main-navigation {
+  margin-bottom: 1.75em;
+}
+
+.main-navigation {
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+  li {
+    border-top: 1px solid $gray1;
+    position: relative;
+  }
+  a {
+    color: $black;
+    display: block;
+    line-height: 1.3125;
+    outline-offset: -1px;
+    padding: 0.84375em 0;
+    &:hover, &:focus {
+      color: $blue1;
+    }
+  }
+  .current-menu-item > a, .current-menu-ancestor > a {
+    font-weight: 700;
+  }
+  ul ul {
+    display: none;
+    margin-left: 0.875em;
+  }
+}
+
+.no-js .main-navigation ul ul {
+  display: block;
+}
+
+.main-navigation {
+  ul .toggled-on {
+    display: block;
+  }
+  .primary-menu {
+    border-bottom: 1px solid $gray1;
+  }
+  .menu-item-has-children > a {
+    margin-right: 56px;
+  }
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  color: $black;
+  content: "";
+  height: 48px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  text-transform: none;
+  top: 0;
+  width: 48px;
+  &:after {
+    border: 0 solid $gray1;
+    border-left-width: 1px;
+    content: "\f431";
+    font-size: 24px;
+    left: 1px;
+    position: relative;
+    width: 48px;
+  }
+  &:hover {
+    background-color: transparent;
+    color: $blue1;
+  }
+  &:focus {
+    background-color: transparent;
+    color: $blue1;
+    outline: thin dotted;
+    outline-offset: -1px;
+    &:after {
+      border-color: transparent;
+    }
+  }
+  &.toggled-on:after {
+    content: "\f432";
+  }
+}
+
+.site-header .main-navigation + .social-navigation {
+  margin-top: 1.75em;
+}
+
+.site-footer .social-navigation {
+  margin-bottom: 1.75em;
+}
+
+.social-navigation {
+  ul {
+    list-style: none;
+    margin: 0 0 -0.4375em;
+  }
+  li {
+    float: left;
+    margin: 0 0.4375em 0.4375em 0;
+  }
+  a {
+    border: 1px solid $gray1;
+    border-radius: 50%;
+    color: $black;
+    display: block;
+    height: 35px;
+    position: relative;
+    width: 35px;
+    &:before {
+      content: "\f415";
+      height: 33px;
+      line-height: 33px;
+      text-align: center;
+      width: 33px;
+    }
+    &:hover:before, &:focus:before {
+      color: $blue1;
+    }
+    &[href*="codepen.io"]:before {
+      content: "\f216";
+    }
+    &[href*="digg.com"]:before {
+      content: "\f221";
+    }
+    &[href*="dribbble.com"]:before {
+      content: "\f201";
+    }
+    &[href*="dropbox.com"]:before {
+      content: "\f225";
+    }
+    &[href*="facebook.com"]:before {
+      content: "\f203";
+    }
+    &[href*="flickr.com"]:before {
+      content: "\f211";
+    }
+    &[href*="foursquare.com"]:before {
+      content: "\f226";
+    }
+    &[href*="plus.google.com"]:before {
+      content: "\f206";
+    }
+    &[href*="github.com"]:before {
+      content: "\f200";
+    }
+    &[href*="instagram.com"]:before {
+      content: "\f215";
+    }
+    &[href*="linkedin.com"]:before {
+      content: "\f208";
+    }
+    &[href*="path.com"]:before {
+      content: "\f219";
+    }
+    &[href*="pinterest.com"]:before {
+      content: "\f210";
+    }
+    &[href*="getpocket.com"]:before {
+      content: "\f224";
+    }
+    &[href*="polldaddy.com"]:before {
+      content: "\f217";
+    }
+    &[href*="reddit.com"]:before {
+      content: "\f222";
+    }
+    &[href*="skype.com"]:before {
+      content: "\f220";
+    }
+    &[href*="stumbleupon.com"]:before {
+      content: "\f223";
+    }
+    &[href*="tumblr.com"]:before {
+      content: "\f214";
+    }
+    &[href*="twitter.com"]:before {
+      content: "\f202";
+    }
+    &[href*="vimeo.com"]:before {
+      content: "\f212";
+    }
+    &[href*="wordpress.com"]:before, &[href*="wordpress.org"]:before {
+      content: "\f205";
+    }
+    &[href*="youtube.com"]:before {
+      content: "\f213";
+    }
+    &[href^="mailto:"]:before {
+      content: "\f410";
+    }
+    &[href*="spotify.com"]:before {
+      content: "\f515";
+    }
+    &[href*="twitch.tv"]:before {
+      content: "\f516";
+    }
+    &[href$="/feed/"]:before {
+      content: "\f413";
+    }
+  }
+}
+
+.post-navigation {
+  border-top: 4px solid $black;
+  border-bottom: 4px solid $black;
+  clear: both;
+  font-family: $font-family-input;
+  margin: 0 7.6923% 3.5em;
+  a {
+    color: $black;
+    display: block;
+    padding: 1.75em 0;
+  }
+  span {
+    display: block;
+  }
+  .meta-nav {
+    color: $gray2;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    letter-spacing: 0.076923077em;
+    line-height: 1.6153846154;
+    margin-bottom: 0.5384615385em;
+    text-transform: uppercase;
+  }
+  .post-title {
+    display: inline;
+    font-family: $font-family-input;
+    font-size: 23px;
+    font-size: 1.4375rem;
+    font-weight: 700;
+    line-height: 1.2173913043;
+    text-rendering: optimizeLegibility;
+  }
+  a {
+    &:hover .post-title, &:focus .post-title {
+      color: $blue1;
+    }
+  }
+  div + div {
+    border-top: 4px solid $black;
+  }
+}
+
+.pagination {
+  border-top: 4px solid $black;
+  font-family: $font-family-input;
+  font-size: 19px;
+  font-size: 1.1875rem;
+  margin: 0 7.6923% 2.947368421em;
+  min-height: 56px;
+  position: relative;
+  &:before, &:after {
+    background-color: $black;
+    content: "";
+    height: 52px;
+    position: absolute;
+    top: 0;
+    width: 52px;
+    z-index: 0;
+  }
+  &:before {
+    right: 0;
+  }
+  &:after {
+    right: 54px;
+  }
+  a {
+    &:hover, &:focus {
+      color: $black;
+    }
+  }
+  .nav-links {
+    padding-right: 106px;
+    position: relative;
+    &:before, &:after {
+      color: $white;
+      font-size: 32px;
+      line-height: 51px;
+      opacity: 0.3;
+      position: absolute;
+      width: 52px;
+      z-index: 1;
+    }
+    &:before {
+      content: "\f429";
+      right: -1px;
+    }
+    &:after {
+      content: "\f430";
+      right: 55px;
+    }
+  }
+  .current .screen-reader-text {
+    position: static !important;
+  }
+  .page-numbers {
+    display: none;
+    letter-spacing: 0.013157895em;
+    line-height: 1;
+    margin: 0 0.7368421053em 0 -0.7368421053em;
+    padding: 0.8157894737em 0.7368421053em 0.3947368421em;
+    text-transform: uppercase;
+  }
+  .current {
+    display: inline-block;
+    font-weight: 700;
+  }
+  .prev, .next {
+    background-color: $black;
+    color: $white;
+    display: inline-block;
+    height: 52px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 52px;
+    z-index: 2;
+  }
+  .prev:before, .next:before {
+    font-size: 32px;
+    height: 53px;
+    line-height: 52px;
+    position: relative;
+    width: 53px;
+  }
+  .prev {
+    &:hover, &:focus {
+      background-color: $blue1;
+      color: $white;
+    }
+  }
+  .next {
+    &:hover, &:focus {
+      background-color: $blue1;
+      color: $white;
+    }
+  }
+  .prev:focus, .next:focus {
+    outline: 0;
+  }
+  .prev {
+    right: 54px;
+    &:before {
+      content: "\f430";
+      left: -1px;
+      top: -1px;
+    }
+  }
+  .next {
+    right: 0;
+    &:before {
+      content: "\f429";
+      right: -1px;
+      top: -1px;
+    }
+  }
+}
+
+/* reset screen-reader-text */
+
+.image-navigation {
+  border-top: 1px solid $gray1;
+  border-bottom: 1px solid $gray1;
+  color: $gray2;
+  font-family: $font-family-input;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.6153846154;
+  margin: 0 7.6923% 2.1538461538em;
+  padding: 1.0769230769em 0;
+}
+
+.comment-navigation {
+  border-top: 1px solid $gray1;
+  border-bottom: 1px solid $gray1;
+  color: $gray2;
+  font-family: $font-family-input;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.6153846154;
+  margin: 0 7.6923% 2.1538461538em;
+  padding: 1.0769230769em 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.comments-title + .comment-navigation {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.image-navigation {
+  .nav-previous:not(:empty), .nav-next:not(:empty) {
+    display: inline-block;
+  }
+}
+
+.comment-navigation {
+  .nav-previous:not(:empty), .nav-next:not(:empty) {
+    display: inline-block;
+  }
+}
+
+.image-navigation .nav-previous:not(:empty) + .nav-next:not(:empty):before, .comment-navigation .nav-previous:not(:empty) + .nav-next:not(:empty):before {
+  content: "\002f";
+  display: inline-block;
+  opacity: 0.7;
+  padding: 0 0.538461538em;
+}

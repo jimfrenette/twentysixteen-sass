@@ -1,0 +1,63 @@
+/**
+ * 6.1 - Links
+ */
+
+a {
+  color: $blue1;
+  text-decoration: none;
+  &:hover, &:focus, &:active {
+    color: $gray2;
+  }
+  &:focus {
+    outline: thin dotted;
+  }
+  &:hover, &:active {
+    outline: 0;
+  }
+}
+
+.entry-content a, .entry-summary a, .taxonomy-description a, .logged-in-as a, .comment-content a, .pingback .comment-body > a, .textwidget a, .entry-footer a:hover, .site-info a:hover {
+  box-shadow: 0 1px 0 0 currentColor;
+}
+
+.entry-content a {
+  &:hover, &:focus {
+    box-shadow: none;
+  }
+}
+
+.entry-summary a {
+  &:hover, &:focus {
+    box-shadow: none;
+  }
+}
+
+.taxonomy-description a {
+  &:hover, &:focus {
+    box-shadow: none;
+  }
+}
+
+.logged-in-as a {
+  &:hover, &:focus {
+    box-shadow: none;
+  }
+}
+
+.comment-content a {
+  &:hover, &:focus {
+    box-shadow: none;
+  }
+}
+
+.pingback .comment-body > a {
+  &:hover, &:focus {
+    box-shadow: none;
+  }
+}
+
+.textwidget a {
+  &:hover, &:focus {
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,429 @@
+/**
+ * 11.2 - Posts and pages
+ */
+
+.site-main > article {
+  margin-bottom: 3.5em;
+  position: relative;
+}
+
+.entry-header, .entry-summary, .entry-content, .entry-footer, .page-content {
+  margin-right: 7.6923%;
+  margin-left: 7.6923%;
+}
+
+.entry-title {
+  font-family: $font-family-input;
+  font-size: 28px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 1em;
+  a {
+    color: $black;
+    &:hover, &:focus {
+      color: $blue1;
+    }
+  }
+}
+
+.post-thumbnail {
+  display: block;
+  margin: 0 7.6923% 1.75em;
+  img {
+    display: block;
+  }
+}
+
+.no-sidebar .post-thumbnail img {
+  margin: 0 auto;
+}
+
+a.post-thumbnail {
+  &:hover, &:focus {
+    opacity: 0.85;
+  }
+}
+
+.entry-content, .entry-summary {
+  border-color: $gray1;
+}
+
+.entry-content h1, .entry-summary h1, .comment-content h1, .textwidget h1 {
+  font-size: 28px;
+  font-size: 1.75rem;
+  line-height: 1.25;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.entry-content h2, .entry-summary h2, .comment-content h2, .textwidget h2 {
+  font-size: 23px;
+  font-size: 1.4375rem;
+  line-height: 1.2173913043;
+  margin-top: 2.4347826087em;
+  margin-bottom: 1.2173913043em;
+}
+
+.entry-content h3, .entry-summary h3, .comment-content h3, .textwidget h3 {
+  font-size: 19px;
+  font-size: 1.1875rem;
+  line-height: 1.1052631579;
+  margin-top: 2.9473684211em;
+  margin-bottom: 1.4736842105em;
+}
+
+.entry-content {
+  h4, h5, h6 {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.3125;
+    margin-top: 3.5em;
+    margin-bottom: 1.75em;
+  }
+}
+
+.entry-summary {
+  h4, h5, h6 {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.3125;
+    margin-top: 3.5em;
+    margin-bottom: 1.75em;
+  }
+}
+
+.comment-content {
+  h4, h5, h6 {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.3125;
+    margin-top: 3.5em;
+    margin-bottom: 1.75em;
+  }
+}
+
+.textwidget {
+  h4, h5, h6 {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.3125;
+    margin-top: 3.5em;
+    margin-bottom: 1.75em;
+  }
+}
+
+.entry-content h4, .entry-summary h4, .comment-content h4, .textwidget h4 {
+  letter-spacing: 0.140625em;
+  text-transform: uppercase;
+}
+
+.entry-content h6, .entry-summary h6, .comment-content h6, .textwidget h6 {
+  font-style: italic;
+}
+
+.entry-content {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+  }
+}
+
+.entry-summary {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+  }
+}
+
+.comment-content {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+  }
+}
+
+.textwidget {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+  }
+}
+
+.entry-content {
+  h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+    margin-top: 0;
+  }
+}
+
+.entry-summary {
+  h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+    margin-top: 0;
+  }
+}
+
+.comment-content {
+  h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+    margin-top: 0;
+  }
+}
+
+.textwidget {
+  h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+    margin-top: 0;
+  }
+}
+
+.post-navigation .post-title, .entry-title, .comments-title {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+body:not(.search-results) {
+  .entry-summary {
+    color: $gray2;
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.4736842105;
+    margin-bottom: 1.4736842105em;
+  }
+  .entry-header + .entry-summary {
+    margin-top: -0.736842105em;
+  }
+  .entry-summary {
+    p, address, hr, ul, ol, dl, dd, table {
+      margin-bottom: 1.4736842105em;
+    }
+    li > {
+      ul, ol {
+        margin-bottom: 0;
+      }
+    }
+    th, td {
+      padding: 0.3684210526em;
+    }
+    fieldset {
+      margin-bottom: 1.4736842105em;
+      padding: 0.3684210526em;
+    }
+    blockquote {
+      border-color: currentColor;
+      > :last-child {
+        margin-bottom: 0;
+      }
+    }
+    .alignleft {
+      margin: 0.2631578947em 1.4736842105em 1.4736842105em 0;
+    }
+    .alignright {
+      margin: 0.2631578947em 0 1.4736842105em 1.4736842105em;
+    }
+    .aligncenter {
+      margin-bottom: 1.4736842105em;
+    }
+  }
+}
+
+.entry-content > :last-child, .entry-summary > :last-child, body:not(.search-results) .entry-summary > :last-child, .page-content > :last-child, .comment-content > :last-child, .textwidget > :last-child {
+  margin-bottom: 0;
+}
+
+.more-link {
+  white-space: nowrap;
+}
+
+.author-info {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 1px 0 1px 0;
+  clear: both;
+  padding-top: 1.75em;
+  padding-bottom: 1.75em;
+}
+
+.author-avatar .avatar {
+  float: left;
+  height: 42px;
+  margin: 0 1.75em 1.75em 0;
+  width: 42px;
+}
+
+.author-description > :last-child {
+  margin-bottom: 0;
+}
+
+.entry-content .author-title {
+  clear: none;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.author-bio {
+  color: $gray2;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.6153846154;
+  margin-bottom: 1.6153846154em;
+  overflow: hidden;
+}
+
+.author-link {
+  white-space: nowrap;
+}
+
+.entry-footer {
+  color: $gray2;
+  font-family: $font-family-input;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.6153846154;
+  margin-top: 2.1538461538em;
+  &:empty {
+    margin: 0;
+  }
+  a {
+    color: $gray2;
+    &:hover, &:focus {
+      color: $blue1;
+    }
+  }
+  > span:not(:last-child):after {
+    content: "\002f";
+    display: inline-block;
+    opacity: 0.7;
+    padding: 0 0.538461538em;
+  }
+  .avatar {
+    height: 21px;
+    margin: -0.1538461538em 0.5384615385em 0 0;
+    width: 21px;
+  }
+}
+
+.sticky-post {
+  color: $gray2;
+  display: block;
+  font-family: $font-family-input;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  letter-spacing: 0.076923077em;
+  line-height: 1.6153846154;
+  margin-bottom: 0.5384615385em;
+  text-transform: uppercase;
+}
+
+/**
+ * IE8 and earlier will drop any block with CSS3 selectors.
+ * Do not combine these styles with the next block.
+ */
+
+.updated:not(.published), .sticky .posted-on, .byline {
+  display: none;
+}
+
+.single .byline, .group-blog .byline {
+  display: inline;
+}
+
+.page-header {
+  border-top: 4px solid $black;
+  margin: 0 7.6923% 3.5em;
+  padding-top: 1.75em;
+}
+
+body {
+  &.error404 .page-header, &.search-no-results .page-header {
+    border-top: 0;
+    padding-top: 0;
+  }
+}
+
+.page-title {
+  font-family: $font-family-input;
+  font-size: 23px;
+  font-size: 1.4375rem;
+  line-height: 1.2173913043;
+}
+
+.taxonomy-description {
+  color: $gray2;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.6153846154;
+  p {
+    margin: 0.5384615385em 0 1.6153846154em;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.page-links {
+  clear: both;
+  font-family: $font-family-input;
+  margin: 0 0 1.75em;
+  a {
+    border: 1px solid $gray1;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    height: 1.8461538462em;
+    line-height: 1.6923076923em;
+    margin-right: 0.3076923077em;
+    text-align: center;
+    width: 1.8461538462em;
+    background-color: $black;
+    border-color: $black;
+    color: $white;
+    &:hover, &:focus {
+      background-color: $blue1;
+      border-color: transparent;
+      color: $white;
+    }
+  }
+  > span {
+    border: 1px solid $gray1;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    height: 1.8461538462em;
+    line-height: 1.6923076923em;
+    margin-right: 0.3076923077em;
+    text-align: center;
+    width: 1.8461538462em;
+  }
+  > .page-links-title {
+    border: 0;
+    color: $black;
+    height: auto;
+    margin: 0;
+    padding-right: 0.6153846154em;
+    width: auto;
+  }
+}
+
+.entry-attachment {
+  margin-bottom: 1.75em;
+}
+
+.entry-caption {
+  color: $gray2;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-style: italic;
+  line-height: 1.6153846154;
+  padding-top: 1.0769230769em;
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.content-bottom-widgets {
+  margin: 0 7.6923%;
+  .widget-area {
+    margin-bottom: 3.5em;
+  }
+}

@@ -1,0 +1,84 @@
+/**
+ * 9.0 - Clearings
+ */
+
+.clear {
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+}
+
+blockquote {
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+}
+
+.entry-content {
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+}
+
+.entry-summary {
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+}
+
+.comment-content {
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+}
+
+.site-content {
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+}
+
+.site-main > article {
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+}
+
+.primary-menu {
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+}
+
+.social-links-menu {
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+}
+
+.textwidget {
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+}
+
+.content-bottom-widgets {
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+}
+
+.clear:after, blockquote:after, .entry-content:after, .entry-summary:after, .comment-content:after, .site-content:after, .site-main > article:after, .primary-menu:after, .social-links-menu:after, .textwidget:after, .content-bottom-widgets:after {
+  clear: both;
+}

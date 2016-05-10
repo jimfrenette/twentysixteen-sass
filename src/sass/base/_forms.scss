@@ -1,0 +1,236 @@
+/**
+ * 5.0 - Forms
+ */
+
+input {
+  line-height: normal;
+}
+
+button {
+  background: $black;
+  border: 0;
+  border-radius: 2px;
+  color: $white;
+  font-family: $font-family-input;
+  font-weight: 700;
+  letter-spacing: 0.046875em;
+  line-height: 1;
+  padding: 0.84375em 0.875em 0.78125em;
+  text-transform: uppercase;
+  &[disabled] {
+    &:hover, &:focus {
+      background: $black;
+      border: 0;
+      border-radius: 2px;
+      color: $white;
+      font-family: $font-family-input;
+      font-weight: 700;
+      letter-spacing: 0.046875em;
+      line-height: 1;
+      padding: 0.84375em 0.875em 0.78125em;
+      text-transform: uppercase;
+    }
+  }
+}
+
+input {
+  &[type="button"] {
+    background: $black;
+    border: 0;
+    border-radius: 2px;
+    color: $white;
+    font-family: $font-family-input;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.84375em 0.875em 0.78125em;
+    text-transform: uppercase;
+    &[disabled] {
+      &:hover, &:focus {
+        background: $black;
+        border: 0;
+        border-radius: 2px;
+        color: $white;
+        font-family: $font-family-input;
+        font-weight: 700;
+        letter-spacing: 0.046875em;
+        line-height: 1;
+        padding: 0.84375em 0.875em 0.78125em;
+        text-transform: uppercase;
+      }
+    }
+  }
+  &[type="reset"] {
+    background: $black;
+    border: 0;
+    border-radius: 2px;
+    color: $white;
+    font-family: $font-family-input;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.84375em 0.875em 0.78125em;
+    text-transform: uppercase;
+    &[disabled] {
+      &:hover, &:focus {
+        background: $black;
+        border: 0;
+        border-radius: 2px;
+        color: $white;
+        font-family: $font-family-input;
+        font-weight: 700;
+        letter-spacing: 0.046875em;
+        line-height: 1;
+        padding: 0.84375em 0.875em 0.78125em;
+        text-transform: uppercase;
+      }
+    }
+  }
+  &[type="submit"] {
+    background: $black;
+    border: 0;
+    border-radius: 2px;
+    color: $white;
+    font-family: $font-family-input;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.84375em 0.875em 0.78125em;
+    text-transform: uppercase;
+    &[disabled] {
+      &:hover, &:focus {
+        background: $black;
+        border: 0;
+        border-radius: 2px;
+        color: $white;
+        font-family: $font-family-input;
+        font-weight: 700;
+        letter-spacing: 0.046875em;
+        line-height: 1;
+        padding: 0.84375em 0.875em 0.78125em;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+button {
+  &:hover, &:focus {
+    background: $blue1;
+  }
+}
+
+input {
+  &[type="button"] {
+    &:hover, &:focus {
+      background: $blue1;
+    }
+  }
+  &[type="reset"] {
+    &:hover, &:focus {
+      background: $blue1;
+    }
+  }
+  &[type="submit"] {
+    &:hover, &:focus {
+      background: $blue1;
+    }
+  }
+}
+
+button:focus {
+  outline: thin dotted;
+  outline-offset: -4px;
+}
+
+input {
+  &[type="button"]:focus, &[type="reset"]:focus, &[type="submit"]:focus {
+    outline: thin dotted;
+    outline-offset: -4px;
+  }
+  &[type="text"], &[type="email"], &[type="url"], &[type="password"], &[type="search"], &[type="tel"], &[type="number"] {
+    background: #f7f7f7;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    border: 1px solid $gray1;
+    border-radius: 2px;
+    color: $gray2;
+    padding: 0.625em 0.4375em;
+    width: 100%;
+  }
+}
+
+textarea {
+  background: #f7f7f7;
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  border: 1px solid $gray1;
+  border-radius: 2px;
+  color: $gray2;
+  padding: 0.625em 0.4375em;
+  width: 100%;
+}
+
+input {
+  &[type="text"]:focus, &[type="email"]:focus, &[type="url"]:focus, &[type="password"]:focus, &[type="search"]:focus, &[type="tel"]:focus, &[type="number"]:focus {
+    background-color: $white;
+    border-color: $blue1;
+    color: $black;
+    outline: 0;
+  }
+}
+
+textarea:focus {
+  background-color: $white;
+  border-color: $blue1;
+  color: $black;
+  outline: 0;
+}
+
+.post-password-form {
+  margin-bottom: 1.75em;
+  label {
+    color: $gray2;
+    display: block;
+    font-family: $font-family-input;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    letter-spacing: 0.076923077em;
+    line-height: 1.6153846154;
+    margin-bottom: 1.75em;
+    text-transform: uppercase;
+  }
+  input[type="password"] {
+    margin-top: 0.4375em;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.search-form {
+  position: relative;
+}
+
+input[type="search"].search-field {
+  border-radius: 2px 0 0 2px;
+  width: -webkit-calc(100% - 42px);
+  width: calc(100% - 42px);
+}
+
+.search-submit {
+  &:before {
+    content: "\f400";
+    font-size: 24px;
+    left: 2px;
+    line-height: 42px;
+    position: relative;
+    width: 40px;
+  }
+  border-radius: 0 2px 2px 0;
+  bottom: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 42px;
+}
