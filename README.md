@@ -1,11 +1,13 @@
 # WordPress Twenty Sixteen Theme Sass
 
-To recompile the Twenty Sixteen stylesheet style.css from the scss files, first run npm install to get the dependencies
+1. Install the files into the /wp-content/themes/twentysixteen folder
+
+2. To recompile the Twenty Sixteen stylesheet style.css from the scss files, first run npm install to get the dependencies
 ````
 npm install
 ````
 
-Then the gulp task that will compile them
+3. Then the gulp task that will compile them
 ````
 gulp css
 ````
