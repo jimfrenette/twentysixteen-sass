@@ -105,17 +105,28 @@
 
 /* Tag Cloud widget */
 
-.tagcloud a {
-  border: 1px solid $gray1;
-  border-radius: 2px;
-  display: inline-block;
-  font-family: $font-family-input;
-  line-height: 1;
-  margin: 0 0.1875em 0.4375em 0;
-  padding: 0.5625em 0.4375em 0.5em;
-  &:hover, &:focus {
-    border-color: $blue1;
-    color: $blue1;
-    outline: 0;
+.tagcloud {
+  a {
+    border: 1px solid $gray1;
+    border-radius: 2px;
+    display: inline-block;
+    font-family: $font-family-input;
+    line-height: 1;
+    margin: 0 0.1875em 0.4375em 0;
+    padding: 0.5625em 0.4375em 0.5em;
+  }
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+    li {
+      display: inline-block;
+    }
+  }
+  a {
+    &:hover, &:focus {
+      border-color: $blue1;
+      color: $blue1;
+      outline: 0;
+    }
   }
 }

@@ -148,8 +148,8 @@ input {
     outline: thin dotted;
     outline-offset: -4px;
   }
-  &[type="text"], &[type="email"], &[type="url"], &[type="password"], &[type="search"], &[type="tel"], &[type="number"] {
-    background: #f7f7f7;
+  &[type="date"], &[type="time"], &[type="datetime-local"], &[type="week"], &[type="month"], &[type="text"], &[type="email"], &[type="url"], &[type="password"], &[type="search"], &[type="tel"], &[type="number"] {
+    background: $offwhite;
     background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
     border: 1px solid $gray1;
     border-radius: 2px;
@@ -160,7 +160,7 @@ input {
 }
 
 textarea {
-  background: #f7f7f7;
+  background: $offwhite;
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
   border: 1px solid $gray1;
   border-radius: 2px;

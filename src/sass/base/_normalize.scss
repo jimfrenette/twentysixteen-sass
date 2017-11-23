@@ -81,8 +81,6 @@ figure {
 }
 
 hr {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -137,11 +135,34 @@ input {
     padding: 0;
   }
   &[type="checkbox"], &[type="radio"] {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin-right: 0.4375em;
     padding: 0;
+  }
+  &[type="date"] {
+    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+      height: auto;
+    }
+  }
+  &[type="time"] {
+    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+      height: auto;
+    }
+  }
+  &[type="datetime-local"] {
+    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+      height: auto;
+    }
+  }
+  &[type="week"] {
+    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+      height: auto;
+    }
+  }
+  &[type="month"] {
+    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+      height: auto;
+    }
   }
   &[type="number"] {
     &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
@@ -157,7 +178,7 @@ input {
 }
 
 fieldset {
-  border: 1px solid $gray1;
+  border: 1px solid #d1d1d1;
   margin: 0 0 1.75em;
   min-width: inherit;
   padding: 0.875em;

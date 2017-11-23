@@ -68,88 +68,88 @@
     /* Brute force since user agents all print differently. */
   }
   body {
-    color: #1a1a1a !important;
+    color: $black !important;
     /* Make sure color schemes don't affect to print */
   }
   blockquote {
     cite, small {
-      color: #1a1a1a !important;
+      color: $black !important;
       /* Make sure color schemes don't affect to print */
     }
   }
   .site-branding .site-title a, .entry-title a, .comment-author {
-    color: #1a1a1a !important;
+    color: $black !important;
     /* Make sure color schemes don't affect to print */
   }
   blockquote, .page-header, .comments-title {
-    border-color: #1a1a1a !important;
+    border-color: $black !important;
     /* Make sure color schemes don't affect to print */
   }
   blockquote, .site-description {
-    color: #686868 !important;
+    color: $gray2 !important;
     /* Make sure color schemes don't affect to print */
   }
   body:not(.search-results) .entry-summary {
-    color: #686868 !important;
+    color: $gray2 !important;
     /* Make sure color schemes don't affect to print */
     blockquote {
-      color: #686868 !important;
+      color: $gray2 !important;
       /* Make sure color schemes don't affect to print */
     }
   }
   .author-bio {
-    color: #686868 !important;
+    color: $gray2 !important;
     /* Make sure color schemes don't affect to print */
   }
   .entry-footer {
-    color: #686868 !important;
+    color: $gray2 !important;
     /* Make sure color schemes don't affect to print */
     a {
-      color: #686868 !important;
+      color: $gray2 !important;
       /* Make sure color schemes don't affect to print */
     }
   }
   .sticky-post, .taxonomy-description, .entry-caption, .comment-author, .comment-metadata a, .comment-notes, .comment-awaiting-moderation {
-    color: #686868 !important;
+    color: $gray2 !important;
     /* Make sure color schemes don't affect to print */
   }
   .site-info {
-    color: #686868 !important;
+    color: $gray2 !important;
     /* Make sure color schemes don't affect to print */
     a {
-      color: #686868 !important;
+      color: $gray2 !important;
       /* Make sure color schemes don't affect to print */
     }
   }
   .wp-caption .wp-caption-text, .gallery-caption {
-    color: #686868 !important;
+    color: $gray2 !important;
     /* Make sure color schemes don't affect to print */
   }
   code, hr {
-    background-color: #d1d1d1 !important;
+    background-color: $gray1 !important;
     /* Make sure color schemes don't affect to print */
   }
   pre, abbr, acronym, table, th, td, .author-info {
-    border-color: #d1d1d1 !important;
+    border-color: $gray1 !important;
     /* Make sure color schemes don't affect to print */
   }
   .comment-list {
     article, .pingback, .trackback {
-      border-color: #d1d1d1 !important;
+      border-color: $gray1 !important;
       /* Make sure color schemes don't affect to print */
     }
   }
   .no-comments {
-    border-color: #d1d1d1 !important;
+    border-color: $gray1 !important;
     /* Make sure color schemes don't affect to print */
   }
   a {
-    color: #007acc !important;
+    color: $blue1 !important;
     /* Make sure color schemes don't affect to print */
   }
   .entry-content a, .entry-summary a, .taxonomy-description a, .comment-content a, .pingback .comment-body > a {
     box-shadow: none;
-    border-bottom: 1px solid #007acc !important;
+    border-bottom: 1px solid $blue1 !important;
     /* Make sure color schemes don't affect to print */
   }
   .site {
