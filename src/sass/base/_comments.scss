@@ -143,6 +143,15 @@
     margin-bottom: 0.5384615385em;
     text-transform: uppercase;
   }
+  #wp-comment-cookies-consent {
+    margin: 0 10px 0 0;
+  }
+  .comment-form-cookies-consent label {
+    display: inline;
+    font-family: Merriweather, Georgia, serif;
+    letter-spacing: 0;
+    text-transform: none;
+  }
 }
 
 .comment-list .comment-form {
