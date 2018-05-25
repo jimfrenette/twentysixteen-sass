@@ -4,17 +4,13 @@
 
 .site-footer {
   padding: 0 7.6923% 1.75em;
-}
 
-.site-info {
-  color: $gray2;
-  font-size: 13px;
-  font-size: 0.8125rem;
-  line-height: 1.6153846154;
-  a {
-    color: $gray2;
-    &:hover, &:focus {
-      color: $blue1;
+  span[role=separator] {
+    font-family: Montserrat, sans-serif;
+    opacity: 0.7;
+    padding: 0 0.307692308em 0 0.538461538em;
+    &::before {
+      content: '\002f';
     }
   }
 }
@@ -29,5 +25,18 @@
     font-family: $font-family-title;
     opacity: 0.7;
     padding: 0 0.307692308em 0 0.538461538em;
+  }
+}
+
+.site-info {
+  color: $gray2;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.6153846154;
+  a {
+    color: $gray2;
+    &:hover, &:focus {
+      color: $blue1;
+    }
   }
 }
