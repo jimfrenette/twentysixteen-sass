@@ -41,23 +41,39 @@
 }
 
 .widget_calendar {
-  td, th {
+  .wp-calendar-nav {
+    display: table;
+    width: 100%;
+
+    span {
+      display: table-cell;
+    }
+  }
+
+  .wp-calendar-nav-prev, .wp-calendar-nav-next {
+    width: 40%;
+  }
+
+  td, th, .wp-calendar-nav span {
     line-height: 2.5625;
     padding: 0;
     text-align: center;
   }
+
   caption {
     font-weight: 900;
     margin-bottom: 1.75em;
   }
+
   tbody a {
-    background-color: $blue1;
-    color: $white;
+    background-color: #007acc;
+    color: #fff;
     display: block;
     font-weight: 700;
+
     &:hover, &:focus {
-      background-color: $gray2;
-      color: $white;
+      background-color: #686868;
+      color: #fff;
     }
   }
 }
