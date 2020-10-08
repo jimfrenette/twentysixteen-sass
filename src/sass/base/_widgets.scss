@@ -66,14 +66,14 @@
   }
 
   tbody a {
-    background-color: #007acc;
-    color: #fff;
+    background-color: $blue1;
+    color: $white;
     display: block;
     font-weight: 700;
 
     &:hover, &:focus {
-      background-color: #686868;
-      color: #fff;
+      background-color: $gray2;
+      color: $white;
     }
   }
 }
